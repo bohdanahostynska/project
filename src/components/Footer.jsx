@@ -3,7 +3,7 @@ import React from 'react'
 function footer() {
   return (
     <div>
-      <p>test comment</p>
+      <p>test comment!</p>
     </div>
   );
 }
