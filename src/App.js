@@ -3,7 +3,7 @@ import Header from "../src/components/Header";
 
 import Main from "../src/components/Main";
 
-import Footer from "../src/components/Footerr";
+import Footer from "../src/components/Footer";
 
 function App() {
   return (
