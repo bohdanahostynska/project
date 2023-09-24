@@ -1,0 +1,13 @@
+.loader {
+  width: 100vw;
+}
+.loader__wrapper {
+  background: repeating-linear-gradient(
+    135deg,
+    rgb(16, 34, 80),
+    rgb(16, 34, 80) calc(25%),
+    rgb(16, 39, 94) calc(25%),
+    rgb(16, 39, 94) calc(50%)
+  );
+  height: 100vh;
+}
