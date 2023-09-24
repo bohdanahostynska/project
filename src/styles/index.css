@@ -118,11 +118,11 @@
 
  /*================= Reusable CSS Classes ===============*/
     .container{
-      max-width: 1080px;
-      padding-left:15px;
+      max-width: 100%;
+      /* padding-left:15px;
       padding-right: 15px;
       margin:0 auto;
-      height: 100vh;
+      height: 100vh; */
 
     }
 
