@@ -16,7 +16,11 @@
     rgb(16, 39, 94) calc(25%),
     rgb(16, 39, 94) calc(50%)
   );
-
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0%;
+  }
   &__info {
     z-index: 1;
     padding: 54px 52px;
@@ -34,6 +38,8 @@
     display: block;
     width: 168px;
     height: 42px;
+    padding-left: 210px;
+    flex: 9 1;
   }
   &__right {
     text-size-adjust: none;
@@ -41,7 +47,6 @@
     color: rgb(34, 34, 34);
     display: block;
     text-align: right;
-    flex: 1 1 0%;
   }
 
   &__text {
@@ -87,7 +92,7 @@
     background-color: rgb(255, 255, 255);
     z-index: 1;
     flex: unset;
-    padding: 40px 60px;
+    padding: 30px 80px;
     max-width: 483px;
     margin-bottom: 100px;
   }
@@ -128,6 +133,9 @@
     font-family: Roboto, sans-serif;
     color: rgb(34, 34, 34);
   }
+  .input__info:not(:last-child) {
+    margin-bottom: 10px;
+  }
   .input__button {
     text-size-adjust: none;
     font-family: inherit;
@@ -142,9 +150,10 @@
     background: rgb(255, 255, 255);
     border-radius: 8px;
     cursor: pointer;
-    padding: 11px 10px 10px;
+    padding: 9px 15px 10px;
     transition: background 0.3s ease-out 0s;
     margin-bottom: 10px;
+    gap: 10px;
   }
   .input__img {
     text-size-adjust: none;
@@ -153,7 +162,6 @@
     height: 35px;
     width: 35px;
     margin-right: 11px;
-    background-color: aliceblue;
   }
   .input__text {
     text-size-adjust: none;
