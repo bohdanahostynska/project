@@ -38,7 +38,7 @@ const RouterApp = () => {
         <Route path="/" element={<Main />} />
         <Route path="/auth" element={<Auth />} />
         <Route path="/loader" element={<Loader />} />
-        <Route path="*" element={<Navigate to="/main" />} />
+        {/* <Route path="*" element={<Navigate to="/main" />} /> */}
       </Routes>
     </div>
   );
