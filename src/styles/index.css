@@ -1,18 +1,22 @@
 /*============== Google Fonts ===========*/
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Heebo:wght@400;500;700&family=League+Spartan:wght@400;500;700&family=Rubik:wght@400;500;600;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,700&display=swap');
+
 /*============== Variables CSS ===========*/
 :root{
   /**========= Colors =======**/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color:#BA0000;
-  --title-color:#ffff;
-  --text-color:#ffff;
-  --body-color:hsl(258,60%,98%);
-  --container-color:black;
+  --first-color:hsl(258,60%,98%);
+  --title-color: rgb(34, 34, 34);
+  --text-color:rgb(162, 162, 162);
+  /* --body-color:hsl(258,60%,98%); */
+  /* --container-color:black; */
+  --container-color: repeating-linear-gradient(135deg, rgb(16, 34, 80), rgb(16, 34, 80) calc(25%), rgb(16, 39, 94) calc(25%), rgb(16, 39, 94) calc(50%));
+
+
 
   /*=========== Font and Typography =========*/
   /* .5rem = 8px | 1rem = 16px ...*/
-  --body-font:'Rubik', sans-serif;
+  --body-font:'Roboto', sans-serif;
   --h1-font-size: 2.25rem;
   --h2-font-size: 1.5rem;
   --h3-font-size: 1.25rem;
@@ -78,6 +82,10 @@
       line-height: 1.7;
       color: var(---text-color);
       overflow-x: hidden;
+      height: 100%;
+      min-height: -webkit-fill-available;
+      margin: 0px !important;
+  
      }
 
      p{
@@ -114,10 +122,11 @@
 
  /*================= Reusable CSS Classes ===============*/
     .container{
-      max-width: 1080px;
-      padding-left:15px;
+      max-width: 100%;
+      /* padding-left:15px;
       padding-right: 15px;
       margin:0 auto;
+      height: 100vh; */
 
     }
 
@@ -126,8 +135,7 @@
     }
 
     .section{
-      padding-top: 25px;
-      padding-bottom: 2rem;
+      padding-bottom: 1rem;
 
     }
 
